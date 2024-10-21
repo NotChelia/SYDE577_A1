@@ -34,6 +34,14 @@ or with the provided Requirements file:
 pip install requirements.txt
 ```
 
+# Code Overview
+The below is a short overview of the architecture of the code in an informal UML diagram format. A couple things to note is that the initial idea was to focus on tensor operations, but looking back it would make more sense to perhaps use a neuron based implementation, and classes such as the Linear or Network classes would have more flexibility. Some aspects of the architecture are more tightly coupled
+![uml](https://i.imgur.com/6jLj6Wr.png)
+
+# Example Training
+Below is a diagram that gives an overview of how the architecture of MyTorch is used for training a network
+![training](https://i.imgur.com/ZeUJljF.png)
+
 # Example Network
 `training_example.py` is a provided example of how the packaged is used for a network with two inputs, two hidden layers with ten neurons each, and a single output using, weights, biases, inputs, and targets in
 the file assignment-one-test-parameters.pkl. Comparing results of the first pass gradient with PyTorch, we can see that:
